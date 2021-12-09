@@ -14,7 +14,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 train = '/content/drive/My Drive/mbti/mbti_train.xlsx'  #훈련 데이터가 담긴 엑셀 파일의 구글 드라이브 경로
-train = '/content/drive/My Drive/mbti/mbti_test.xlsx'  #테스트 데이터가 담긴 엑셀 파일의 구글 드라이브 경로
+test = '/content/drive/My Drive/mbti/mbti_test.xlsx'  #테스트 데이터가 담긴 엑셀 파일의 구글 드라이브 경로
 
 !pip install pandas
 !pip install matplotlib
