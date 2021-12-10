@@ -86,8 +86,11 @@ google colab에서 preprocessing.ipynb 파일을 열어 차례대로 실행한�
    test 라는 변수에 mbti_test.xlsx 파일의 구글 드라이브 경로를 저장해준다.
 
    예) 내 드라이브의 'mbti'라는 폴더에 저장해놓은 저자의 경우에는 
+   
    train = '/content/drive/My Drive/mbti/mbti_train.xlsx'
+   
    test = '/content/drive/My Drive/mbti/mbti_test.xlsx'
+   
    라고 해주었다.
 
 5. 그리고 '런타임'>'모두 실행' 하면, 
