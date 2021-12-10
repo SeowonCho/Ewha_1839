@@ -55,7 +55,7 @@ google colab에서 preprocessing.ipynb 파일을 열어 차례대로 실행한�
 # 3 - LSTM
 
 
-**LSTM으로 긍정적 vs 부정적 영화 리뷰 분류 readme**
+**LSTM으로 긍정적 vs 부정적 영화 리뷰 분류하기**
 
 1. 코랩을 켜서 '파일'>'새 노트' 로 새 노트를 만들어주고 'LSTM_moviereview.py' 코드를 복사, 붙여넣기 해준다.
 
@@ -64,36 +64,44 @@ google colab에서 preprocessing.ipynb 파일을 열어 차례대로 실행한�
 
 **LSTM으로 E vs I 분류하기**
 
-구글 스프레드 시트와 연동해서 데이터를 불러오는 방법을 사용했다.
+   구글 스프레드 시트와 연동해서 데이터를 불러오는 방법을 사용했다.
 
 1. mbti_train.xlsx와 mbti_test.xlsx를 다운받고, 구글 드라이브에 업로드해준다.
 
-    (저자는 내 드라이브에 'mbti' 라는 폴더를 만들고 그 안에 mbti_train.xlsx 와 mbti_test.xlsx를 업로드해주었다.)
+    (저자는 내 드라이브에 'mbti' 라는 폴더를 만들고 그 안에 
+    
+    mbti_train.xlsx 와 mbti_test.xlsx를 업로드해주었다.)
 
 
 2. 코랩을 켜서 '파일'>'새 노트' 로 새 노트를 만들어주고 
-'mbti_LSTM.py' 코드를 복사, 붙여넣기 해준다.
+
+    'mbti_LSTM.py' 코드를 복사, 붙여넣기 해준다.
 
 3. 주석으로 "#훈련 데이터가 담긴 엑셀 파일의 구글 드라이브 경로" 라고 적힌 라인에는
-train 이라는 변수에 mbti_train.xlsx 파일의 구글 드라이브 경로를 적어준다.
+
+    train 이라는 변수에 mbti_train.xlsx 파일의 구글 드라이브 경로를 적어준다.
 
 4. 주석으로 "#테스트 데이터가 담긴 엑셀 파일의 구글 드라이브 경로" 라고 적힌 라인에는 
-test 라는 변수에 mbti_test.xlsx 파일의 구글 드라이브 경로를 저장해준다.
 
-    예) 내 드라이브의 'mbti'라는 폴더에 저장해놓은 저자의 경우에는 
-train = '/content/drive/My Drive/mbti/mbti_train.xlsx'
-test = '/content/drive/My Drive/mbti/mbti_test.xlsx'
-라고 해주었다.
+   test 라는 변수에 mbti_test.xlsx 파일의 구글 드라이브 경로를 저장해준다.
+
+   예) 내 드라이브의 'mbti'라는 폴더에 저장해놓은 저자의 경우에는 
+   train = '/content/drive/My Drive/mbti/mbti_train.xlsx'
+   test = '/content/drive/My Drive/mbti/mbti_test.xlsx'
+   라고 해주었다.
 
 5. 그리고 '런타임'>'모두 실행' 하면, 
-'노트북에서 Google Drive 파일에 액세스하도록 허용하시겠습니까?' 라는 팝업창이 뜨는데, 
-'Google Drive에 연결'을 클릭해준다.
+   '노트북에서 Google Drive 파일에 액세스하도록 허용하시겠습니까?' 라는 팝업창이 뜨는데, 
+
+   'Google Drive에 연결'을 클릭해준다.
 
     그러면 '계정 선택' 창이 뜨는데, 계정을 선택해준 다음,
-'구글 계정에 액세스하려고 합니다.' 라는 창이 뜨면 '허용'을 눌러준다.
+    
+    '구글 계정에 액세스하려고 합니다.' 라는 창이 뜨면 '허용'을 눌러준다.
 
     (그리고 만약 콘솔창에 텍스트 필드가 뜬다면, 로그인 한 다음 암호가 뜰텐데, 
-그 암호를 복사해서 붙여넣기 해준다.)
+    
+    그 암호를 복사해서 붙여넣기 해준다.)
 
     그러면 데이터 로드는 끝나고 다음 코드들이 진행된다.
 
